@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HastTag Bazaar</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/img/hashtag-bazaar-favicon.png" type="image/png" sizes="32x32">
+
+	<!-- Owl Slider -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- //// Page Header -->  
+	<header class="pt-15 pb-15">
+		<div class="container d-flex justify-between align-center">
+
+			<!-- Logo -->
+			<a href="index.html" class="d-flex">
+				<img src="assets/img/hashtagbazaar-logo.png" class="logo" alt="">
+			</a>
+
+			 
+
+			<!-- Search -->
+			<form class="search-box d-flex" action="product-list.html">
+				<input type="search" placeholder="Search for products">
+				<button><img src="assets/icon/search.png" alt=""></button>
+			</form>
+
+			<!-- Language -->
+			<div class="dropdown city center">
+				<div class="dropdown-trigger align-center">
+					<!-- <img src="assets/icon/translate.svg"> -->
+					<span class="pl-5">English</span>
+					<img src="assets/icon/down-arrow.svg" class="down-arrow ml-10" alt="">
+				</div>
+				<div class="dropdown-item">
+					<a href="#">Hindi</a>
+					<a href="#">Bengali</a>
+				</div>
+			</div>
+
+			<!-- Cart -->
+			<a href="cart.html" class="cart position-relative circle-icon ml-15 center">
+				<img src="assets/icon/shopping-cart-svg.svg" alt="">
+				<span class="center">3</span>
+			</a>      
+
+			<!-- Login -->
+			<a href="#" data-toggle="login-box"  class="btn-2 active popup-trigger p-15 radius-4 ml-25">Login&nbsp;/&nbsp;Sign&nbsp;Up</a>
+
+		</div>
+	</header>
+
+	<main>
+		
+
+		<div class="container col-2-d-1 align-start mt-40 mb-40 position-relative">
+			<div class="col_2_first">
+				<div class="card w-100">
+						<h3 class="card-header">Payment Options</h3>
+						<div class="payment-box pb-20 active-box">
+
+							<label for="hashtagWallet" class="d-flex cursor-pointer bg-white p-15 shadow-1">
+								<input id="hashtagWallet" type="checkbox" class="mr-10" checked>
+							    <div>
+							    	<p class="m-0 font-weight-500">Hashtag Wallet Money</p>
+							        <small class="text-mute">Available Money &#8377;220</small>
+							    </div>
+							</label>
+
+							<div class="select-box active-trigger mt-30">
+								<button class="select-box-btn">
+									<p>UPI</p>
+									<div class="d-flex">
+										<img src="assets/icon/upi-icons.png" alt="">
+									</div>
+								</button>
+								<div class="payment-info p-20">
+									<div class="d-flex align-center">
+										<div class="w-100">
+											<input type="text" placeholder="Enter Your UPI ID" class="form-control">
+										</div>
+										<a href="thank-you.html" class="btn pl-25 pt-15 pb-15 pr-25 ml-15 next-step">Proceed&nbsp;to&nbsp;Pay</a>
+									</div>	
+								</div>
+							</div>
+
+							<div class="select-box active-trigger mt-10">
+								<button class="select-box-btn">
+									<p>Cash On Delivery <span class="text-small ml-5">(COD)</span></p>
+								</button>
+							</div>
+							<div class="select-box active-trigger mt-10">
+								<button class="select-box-btn">
+									<p>Debit Card</p>
+									<div class="d-flex">
+										<img src="assets/icon/credit-cards.svg" alt="">
+									</div>
+								</button>
+								<div class="payment-info p-20">
+									<div class="debit-card">
+										<div class="form-group">
+											<label for="cardnumber" class="pr-50">Card number</label>
+											<input id="cardnumber" class="form-control" type="text" pattern="[0-9]{16,19}" maxlength="16" placeholder="8888-8888-8888-8888"/>
+										</div>
+										<div class="d-flex justify-between mt-15">
+											<div class="form-group">
+												<label for="expiry-date">Expiry</label>
+												<div class="d-flex align-center">
+													<select id="expiry-date" class="form-control mr-20">
+														<option>MM</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+													<span class="pl-10 pr-10">/</span>
+													<select id="expiry-date" class="form-control">
+														<option>YYYY</option>
+														<option value="2021">2021</option>
+														<option value="2022">2022</option>
+														<option value="2023">2023</option>
+														<option value="2024">2024</option>
+														<option value="2025">2025</option>
+														<option value="2026">2026</option>
+														<option value="2027">2027</option>
+														<option value="2028">2028</option>
+														<option value="2029">2029</option>
+														<option value="2030">2030</option>
+														<option value="2030">2031</option>
+														<option value="2030">2032</option>
+														<option value="2030">2033</option>
+														<option value="2030">2034</option>
+														<option value="2030">2035</option>
+														<option value="2030">2036</option>
+														<option value="2030">2037</option>
+														<option value="2030">2038</option>
+														<option value="2030">2039</option>
+														<option value="2030">2040</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group ml-50">
+												<label for="cvv">CVC/CVV</label>
+												<input type="text" maxlength="4" class="form-control" placeholder="123"/>
+											</div>
+										</div>
+									</div>
+									<div class="justify-end">
+										<a href="thank-you.html" class="btn pl-25 pt-15 pb-15 mt-20 pr-25 ml-15 next-step">Proceed&nbsp;to&nbsp;Pay</a>
+									</div>
+								</div>
+							</div>
+							<div class="select-box active-trigger mt-10">
+								<button class="select-box-btn">
+									<p>Credit Card</p>
+									<div class="d-flex">
+										<img src="assets/icon/credit-cards.svg" alt="">
+									</div>
+								</button>
+								<div class="payment-info p-20">
+									<div class="debit-card">
+										<div class="form-group">
+											<label for="cardnumber" class="pr-50">Card number</label>
+											<input id="cardnumber" class="form-control" type="text" pattern="[0-9]{16,19}" maxlength="16" placeholder="8888-8888-8888-8888"/>
+										</div>
+										<div class="d-flex justify-between mt-15">
+											<div class="form-group">
+												<label for="expiry-date">Expiry</label>
+												<div class="d-flex align-center">
+													<select id="expiry-date" class="form-control">
+														<option>MM</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+													<span class="pl-10 pr-10">/</span>
+													<select id="expiry-date" class="form-control">
+														<option>YYYY</option>
+														<option value="2021">2021</option>
+														<option value="2022">2022</option>
+														<option value="2023">2023</option>
+														<option value="2024">2024</option>
+														<option value="2025">2025</option>
+														<option value="2026">2026</option>
+														<option value="2027">2027</option>
+														<option value="2028">2028</option>
+														<option value="2029">2029</option>
+														<option value="2030">2030</option>
+														<option value="2030">2031</option>
+														<option value="2030">2032</option>
+														<option value="2030">2033</option>
+														<option value="2030">2034</option>
+														<option value="2030">2035</option>
+														<option value="2030">2036</option>
+														<option value="2030">2037</option>
+														<option value="2030">2038</option>
+														<option value="2030">2039</option>
+														<option value="2030">2040</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group ml-50">
+												<label for="cvv">CVC/CVV</label>
+												<input type="text" maxlength="4" class="form-control" placeholder="123"/>
+											</div>
+										</div>
+									</div>
+									<div class="justify-end">
+										<a href="thank-you.html" class="btn pl-25 pt-15 pb-15 mt-20 pr-25 ml-15 next-step">Proceed&nbsp;to&nbsp;Pay</a>
+									</div>
+								</div>
+							</div>
+							<div class="select-box active-trigger mt-10">
+								<button class="select-box-btn">
+									<p>Net Banking</p>
+								</button>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="card col_2_last flex-column">
+				<h3 class="card-header">Order Summary</h3>
+				<div class="justify-between mb-10">
+					<div class="font-weight-500">Add Money</div>
+					<span>₹999</span>
+				</div>
+				<div class="total-border"></div>
+				<h3 class="justify-between">
+					<span>Total</span>
+					<span>₹999</span>
+				</h3>
+				<button class="btn pt-15 pb-15 w-100 next-step text-center mt-5 mb-10" id="checkout-btn" style="display: none;">Proceed to Checkout</button>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer-2 pt-25 pb-25">
+		<div class="container justify-between align-center">
+			<div class="d-flex align-center">
+				Copyright © 2020 - 2021&nbsp;<a href="#" class="text-primary  font-weight-500">HashTag Bazaar</a>
+
+				<a href="#" class="ml-50">Terms &amp; Conditions</a>
+			</div>
+			<div class="d-flex align-center">
+				Need help? <a href="#" class="ml-5">Contact Us</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Jquery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- Owl Slider -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<!-- Custom Js -->
+	<script src="assets/js/function.js"></script>
+
+</body>
+</html>

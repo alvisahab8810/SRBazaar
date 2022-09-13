@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HastTag Bazaar</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/img/hashtag-bazaar-favicon.png" type="image/png" sizes="32x32">
+
+	<!-- Owl Slider -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+	<!-- //// Page Header -->  
+	<header class="pt-15 pb-15">
+		<div class="container d-flex justify-between align-center">
+
+			<!-- Logo -->
+			<a href="index.html" class="d-flex">
+				<img src="assets/img/hashtagbazaar-logo.png" class="logo" alt="">
+			</a>
+
+			 
+
+			<!-- Search -->
+			<form class="search-box d-flex" action="product-list.html">
+				<input type="search" placeholder="Search for products">
+				<button><img src="assets/icon/search.png" alt=""></button>
+			</form>
+
+			<!-- Language -->
+			<div class="dropdown city center">
+				<div class="dropdown-trigger align-center">
+					<!-- <img src="assets/icon/translate.svg"> -->
+					<span class="pl-5">English</span>
+					<img src="assets/icon/down-arrow.svg" class="down-arrow ml-10" alt="">
+				</div>
+				<div class="dropdown-item">
+					<a href="#">Hindi</a>
+					<a href="#">Bengali</a>
+				</div>
+			</div>
+
+			<!-- Cart -->
+			<a href="cart.html" class="cart position-relative circle-icon ml-15 center">
+				<img src="assets/icon/shopping-cart-svg.svg" alt="">
+				<span class="center">3</span>
+			</a>      
+
+			<!-- Login -->
+			<a href="#" data-toggle="login-box"  class="btn-2 active popup-trigger p-15 radius-4 ml-25">Login&nbsp;/&nbsp;Sign&nbsp;Up</a>
+
+		</div>
+	</header>
+
+
+	<main>
+		<div class="category-page">
+			<div class="container">
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Clothing & Accessories</a></li>
+				</ul>
+			</div>
+			<div class="container category-page-grid mt-40">
+				<div class="first-box filter-box">
+					<div class="accordian">
+						<h3 class="accordian-heading active mt-0">Categories</h3>
+						<div class="accordian-content">
+							<div class="list active-box">
+								<a href="#" class="active-trigger active">T-Shit</a>
+								<a href="#" class="active-trigger" >Shirt</a>
+								<a href="#" class="active-trigger" >Shoes</a>
+								<a href="#" class="active-trigger" >Watch</a>
+								<a href="#" class="active-trigger" >Footwear</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordian mt-25">
+						<h3 class="accordian-heading active mt-0">Brand</h3>
+						<div class="accordian-content">
+							<div class="list">
+								<div>
+									<input type="checkbox" id="nike-brand">
+									<label for="nike-brand">Nike</label>
+								</div>
+								<div>
+									<input type="checkbox" id="tommy-hilfiger">
+									<label for="tommy-hilfiger">Tommy Hilfiger</label>
+								</div>
+								<div>
+									<input type="checkbox" id="adidas">
+									<label for="adidas">Adidas</label>
+								</div>
+								<div>
+									<input type="checkbox" id="skechers">
+									<label for="skechers">Skechers</label>
+								</div>
+								<div>
+									<input type="checkbox" id="trendyol">
+									<label for="trendyol">Trendyol</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-25">
+						<h3>Color</h3>
+						<div class="colors-choose-box d-flex active-box">
+							<div class="active-trigger" style="background:#F44336;"></div>
+							<div class="active-trigger active" style="background:#3F51B5;"></div>
+							<div class="active-trigger" style="background:#FF9800;"></div>
+							<div class="active-trigger" style="background:#673AB7;"></div>
+							<div class="active-trigger" style="background:#4CAF50;"></div>
+						</div>
+					</div>
+
+					<div class="accordian mt-25">
+						<h3 class="accordian-heading active mt-0">Price</h3>
+						<div class="accordian-content">
+							<div class="list active-box">
+								<a href="#" class="active-trigger">Under &#8377;199</a>
+								<a href="#" class="active-trigger active">Under &#8377;399</a>
+								<a href="#" class="active-trigger">Under &#8377;699</a>
+								<a href="#" class="active-trigger">Under &#8377;999</a>
+								<a href="#" class="active-trigger">&#8377;999+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="last-box product-container">
+					<div class="c-p-tool-box align-center justify-between">
+						<div class="d-flex product-view active-box">
+							<div class="grid-view mr-15 active-trigger active">
+								<img src="assets/icon/grid-view.svg">
+							</div>
+							<div class="list-view  active-trigger">
+								<img src="assets/icon/list-view.svg">
+							</div>
+						</div>
+						<div>
+							<label for="sort-by" class="text-small text-light font-weight-500">Sort By</label>
+							<select class="form-control-border" id="sort-by">
+								<option>Recommended</option>
+								<option>Price: High to Low</option>
+								<option>Price: Low to High</option>
+								<option>New Arrivals</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-4 product-box flex-wrap mt-20 mb-15-a shadow-1-a">
+						
+						<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="product-detail.html" class="product">
+						<div class="p-wishlist">
+							<img src="assets/icon/heart.svg">
+						</div>
+						<div class="p-img-box">
+							<img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1607613000/N32628523A_1.jpg" alt="">
+						</div>
+						<div class="p-detail">
+							<h3 class="p-title">Mi Super Bass Wireless Headphones Red</h3>
+							<div class="mr-10 p-ratting align-center">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star.svg" alt="">
+								<img src="assets/icon/star-outline.svg" alt="">
+								<span class="p-review-count">(30)</span>
+							</div>
+							<div class="p-price mt-10"><span></span>&#8377;300</div>
+							<div class="price-box mt-5">
+								<div class="old-price mr-20">₹1,200</div>
+								<div class="price-off text-primary">54% Off</div>
+							</div>
+							<div class="justify-between align-center mt-10">
+								<p class="mr-15">150 Units Sold</p>
+								<div class="p-cart">
+									<img src="assets/icon/cart-icon.svg" height="20" width="20">
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<!-- Footer -->
+	<footer class="pt-20 mt-50">
+		<div></div>
+		<div class="container d-flex pt-50 pb-30 justify-between">
+			<div class="flex-column">
+				<h2 class="m-0 f-heading"><span>#</span>Bazaar</h2>
+				<a href="#">About Us</a>
+				<a href="#">Career</a>
+				<a href="#">Contact Us</a>
+				<a href="#">FAQ</a>
+				<a href="#">Terms & Conditions</a>
+			</div>
+			<div class="flex-column">
+				<h2 class="m-0 f-heading">ENGAGE</h2>
+				<a href="#">Become a Seller</a>
+				<a href="#">Become an Affiliate</a>
+				<a href="#">Become an Investor</a>
+			</div>
+			<div class="flex-column">
+				<h2 class="m-0 f-heading">Policy</h2>
+				<a href="cancellation-policy.html">Cancellation</a>
+				<a href="exchange-policy.html">Exchange</a>
+				<a href="refund-policy.html">Refund</a> 
+			</div>
+			<div class="flex-column">
+				<h2 class="m-0 f-heading">Follow Us</h2>
+				<a target="_blank" href="https://www.youtube.com/channel/UCqKTl6tIqfYOU2Qnx0BLLSg/featured">YouTube</a>
+				<a target="_blank" target="_blank" href="https://www.facebook.com/hashtagbazaarindia">Facebook</a>
+				<a target="_blank" href="https://twitter.com/HashtagBazaar">Twitter</a>
+				<a target="_blank" href="https://www.instagram.com/hashtag.bazaar">Instagram</a>
+			</div>
+			<div class="flex-column">
+				<h2 class="m-0 f-heading">Customer</h2>
+				<a href="my-account.html">My Account</a>
+				<a href="orders.html">Order</a>
+				<a href="cart.html">Cart</a>
+				<a href="orders.html">Refund Status</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="copyright pb-50 d-flex justify-between align-center pt-30">
+				<div class="d-flex align-center">Copyright &copy; 2020 - 2021&nbsp;<a href="#" class="text-primary  font-weight-500">HashTag Bazaar</a>. All Rights Reserved</div>
+				<img src="https://s1.nordcdn.com/nordvpn/media/1.855.0/images/global/logos/card/credit-cards.svg" alt="">
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Jquery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- Owl Slider -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<!-- Custom Js -->
+	<script src="assets/js/function.js"></script>
+
+</body>
+</html>
