@@ -2716,6 +2716,15 @@ canvas{
 	}
 }
 
+
+@media (max-width: 600px){
+.col-1-600 > * {
+    hmm: ;
+    width: 100%;
+    width: 100%;
+}
+}
+
 @media(max-width:768px){
 	.d-none-768{display:none !important}
 	.p-0-768{padding:0;}
