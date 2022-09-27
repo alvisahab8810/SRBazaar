@@ -423,6 +423,7 @@ header .btn-2{
 
 
 .cart span{
+
 	position:absolute;
 	height:27px;
 	width:27px;
@@ -438,6 +439,7 @@ header .btn-2{
 }
 
 .cart{
+	display: none;
 	padding: 11px 9px;
 }
 
@@ -2720,11 +2722,37 @@ canvas{
 }
 
 @media(max-width:600px){
-	.col-1-600 > *{
+	.col-1-600 > *{         hmm 
 		width:100%;
 	}
 	.col-2-600 > *{
 		width:calc(50% - 7.5px);
+	}
+	.product{
+		width: 100%;
+	}
+
+	header .btn-2{
+		display: none;
+	}
+	.copyright{
+		flex-wrap: wrap;
+	}
+	.footercont{
+		font-size: 10px;
+	}
+	.srbazaar{
+		flex-wrap: wrap;
+	}
+	
+	.textnone{
+		display: none;
+	}
+	.pl-55{
+		display: none;
+	}
+	.cartnone{
+		display: none;
 	}
 }
 
@@ -2735,3 +2763,7 @@ canvas{
 	text-align: center;
 	display: flex;
 	align-items: center;
+}
+.dropnone{
+	display: none;
+}
