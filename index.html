@@ -30,8 +30,8 @@
 
 
 			<!-- Search -->
-			<form class="search-box d-flex" action="product-list.html">
-				<input type="search" placeholder="Search for products">
+			<form class="search-box d-flex" action="#">
+				<input type="search"id="myInput" onkeyup="myFunction()" placeholder="Search for products">
 				<button><img src="assets/icon/search.png" alt=""></button>
 			</form>
 
@@ -243,7 +243,7 @@
  -->
 					<a href="#" class="view-all">View All</a>
 				</div>
-				<div class="owl-carousel deal-slider">
+				<div class="owl-carousel deal-slider"id="myUL">
 			<!-- 		<div class="product">
 						<div class="p-wishlist">
 							<img src="assets/icon/heart.svg">
@@ -1308,7 +1308,7 @@ https://wa.link/rxi1cd
 								<img src="assets/icon/star-outline.svg" alt="">
 								<span class="p-review-count">(30)</span>
 							</div>
-							<div class="p-price mt-10"><span></span>&#8377;52</div>
+							<div class="p-price mt-10"><span></span>&#8377;55</div>
 							<!-- <div class="p-price mt-10"><a href="#" class="view-all"> Buy Now</a></div> -->
 
 						 <div class="mr-20"><a href="https://wa.link/muk5m4" class="what-app" target="_blank"><i class="ri-whatsapp-line"></i> Whatsapp</a></div>
@@ -2390,10 +2390,10 @@ https://wa.link/rxi1cd
 			</div>
 			<div class="flex-column mb-30">
 				<h2 class="m-0 f-heading">Customer</h2>
-				<a href="my-account.html">My Account</a>
-				<a href="orders.html">Order</a>
-				<a href="cart.html">Cart</a>
-				<a href="orders.html">Refund Status</a>
+				<a href="#">My Account</a>
+				<a href="#">Order</a>
+				<a href="#">Cart</a>
+				<a href="#">Refund Status</a>
 			</div>
 		</div>
 		<div class="container">
@@ -2968,6 +2968,24 @@ https://wa.link/rxi1cd
 
 	<!-- Custom Js -->
 	<script src="assets/js/function.js"></script>
-	
+	<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;}
+
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+</script>
+	 
 </body>
 </html>
