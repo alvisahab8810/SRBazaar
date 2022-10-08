@@ -2817,3 +2817,13 @@ canvas{
 .timing{
 	font-size:15px;
 }
+.selectbx{
+	display:flex;
+	justify-content: space-between;
+}
+.kg{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #706969;
+    outline: none;
+}
