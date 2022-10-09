@@ -2757,6 +2757,12 @@ canvas{
  width: 50px;
  height: 50px;
 }
+.sliderimg{
+	display: none!important;
+}
+.sliderimg1{
+	display: block!important;
+}
 }
 .category{
 	display: flex;
@@ -2824,4 +2830,9 @@ canvas{
     border-radius: 4px;
     color: #706969;
     outline: none;
+}
+
+
+.sliderimg1{
+	display: none;
 }
