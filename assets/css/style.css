@@ -2837,7 +2837,7 @@ canvas{
 	display: none;
 }
 
-@media (max-width: 350px){
+@media (max-width: 450px){
   .timing{
   	margin-top: 3px!important;
   }
