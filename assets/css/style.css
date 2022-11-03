@@ -42,7 +42,7 @@ body{
 
 
 }
-body::before{
+/*body::before{
 content:"The website under maintenance.";
 position: absolute;
 width: 100%;
@@ -54,7 +54,7 @@ font-size: 70px;
 font-weight: bold;
 text-align: center;
 padding-top: 100px;
-}
+}*/
 a{color:#111;display:inline-block;text-decoration:none}
 img{/* max-width:100%; */object-fit: contain;}
 input{outline:unset}
@@ -2773,7 +2773,7 @@ canvas{
 }
 
 @media(max-width:600px){
-	.col-1-600 > *{         hmm 
+	.col-1-600 > *{          
 		width:100%;
 	}
 	.col-2-600 > *{
@@ -2835,4 +2835,10 @@ canvas{
 
 .sliderimg1{
 	display: none;
+}
+
+@media (max-width: 350px){
+  .timing{
+  	margin-top: 3px!important;
+  }
 }
