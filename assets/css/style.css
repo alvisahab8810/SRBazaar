@@ -42,7 +42,7 @@ body{
 
 
 }
-body::before{
+/*body::before{
 content:"The website under maintenance.";
 position: absolute;
 width: 100%;
@@ -54,7 +54,7 @@ font-size: 70px;
 font-weight: bold;
 text-align: center;
 padding-top: 100px;
-}
+}*/
 a{color:#111;display:inline-block;text-decoration:none}
 img{/* max-width:100%; */object-fit: contain;}
 input{outline:unset}
